@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/ic_events"
+        android:title="@string/events" />
+
+    <item
+        android:id="@+id/nav_leagues"
+        android:icon="@drawable/ic_leagues"
+        android:title="@string/leagues" />
+
+    <item
+        android:id="@+id/nav_teams"
+        android:icon="@drawable/ic_teams"
+        android:title="@string/teams" />
+
+    <item
+        android:id="@+id/nav_players"
+        android:icon="@drawable/ic_players"
+        android:title="@string/players" />
+
+
+</menu>

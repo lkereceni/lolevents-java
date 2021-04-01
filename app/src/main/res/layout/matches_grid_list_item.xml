@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#424242"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <ImageView
+            android:id="@+id/team1_logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/team1_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/team2_logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:contentDescription="@string/team2_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tbd"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#C6930A"
+            app:layout_constraintEnd_toEndOf="@+id/team1_logo"
+            app:layout_constraintStart_toStartOf="@+id/team1_logo"
+            app:layout_constraintTop_toBottomOf="@+id/team1_logo" />
+
+        <TextView
+            android:id="@+id/team2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tbd"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#C6930A"
+            app:layout_constraintEnd_toEndOf="@+id/team2_logo"
+            app:layout_constraintStart_toStartOf="@+id/team2_logo"
+            app:layout_constraintTop_toBottomOf="@+id/team2_logo" />
+
+        <TextView
+            android:id="@+id/number_of_games_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/best_of_3"
+            android:textColor="#C6930A"
+            app:layout_constraintEnd_toStartOf="@+id/team2_score"
+            app:layout_constraintStart_toEndOf="@+id/team1_score"
+            app:layout_constraintTop_toBottomOf="@+id/team1_score" />
+
+        <TextView
+            android:id="@+id/team1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/_2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#C6930A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/team1_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/team2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="@string/_0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#C6930A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/team2_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/match_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_14_3_2020_20_00"
+            android:textColor="#C6930A"
+            app:layout_constraintBottom_toTopOf="@+id/team2_score"
+            app:layout_constraintEnd_toEndOf="@+id/team2_score"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="@+id/team1_score" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

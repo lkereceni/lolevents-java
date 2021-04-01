@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="top">TOP</string>
+    <string name="jun">JUNGLE</string>
+    <string name="mid">MID</string>
+    <string name="adc">ADC</string>
+    <string name="sup">SUPPORT</string>
+</resources>
